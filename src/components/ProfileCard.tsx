@@ -95,15 +95,18 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ profile }) => {
                 Lista de Desejos
               </Button>
               
-              <button
-                onClick={handleLetterClick}
+              <Button
+                variant="outline"
+                size="sm"
                 className={cn(
-                  "p-2 text-love-dark hover:text-primary transition-all",
-                  activeMessage === profile.id && "animate-letter-open"
+                  "text-xs gap-1",
+                  activeMessage === profile.id && "bg-primary text-primary-foreground"
                 )}
+                onClick={handleLetterClick}
               >
-                <Mail size={24} />
-              </button>
+                <Mail size={14} />
+                Enviar Mensagem
+              </Button>
             </div>
           </div>
         </div>

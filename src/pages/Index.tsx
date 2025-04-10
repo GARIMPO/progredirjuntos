@@ -10,6 +10,7 @@ import { Separator } from "@/components/ui/separator";
 import { Trophy, Mail, ArchiveIcon, Loader2 } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { cn } from "@/lib/utils";
+import BeatingHeart from "@/components/BeatingHeart";
 
 const Index = () => {
   const { profiles, goals, activeMessage, isLoading } = useAppContext();
@@ -33,7 +34,7 @@ const Index = () => {
     <div className="min-h-screen p-4 md:p-8 max-w-5xl mx-auto">
       <header className="mb-8 text-center">
         <h1 className="text-3xl md:text-4xl font-bold text-love-dark">
-          Progredir Juntos ❤
+          Progredir Juntos <BeatingHeart size={28} />
         </h1>
       </header>
 
